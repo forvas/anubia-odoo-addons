@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!--         <report id="purchase.report_purchase_quotation"  -->
+<!--         		model="purchase.order"  -->
+<!--                 name="purchase.quotation"  -->
+<!--                 rml="customized_reports_01/report/request_quotation.rml" -->
+<!--                 string="Request for Quotation"  -->
+<!--                 auto="False"/> -->
+        <report id="purchase.report_purchase_order" 
+        		model="purchase.order"
+                name="purchase.order" 
+                rml="customized_reports_01/report/purchase_order.rml"
+                usage="default" 
+                string="Purchase Order"
+                auto="False"/>
+        <report id="purchase.report_purchase_order" 
+        		model="purchase.order"
+                name="purchase.discount.order" 
+                rml="customized_reports_01/report/purchase_order.rml"
+                usage="default" 
+                string="Purchase Order"
+                auto="False"/>
+        <report id="purchase.report_purchase_order"
+				name="purchase.discount.order"
+				string="Print Orders"
+				model="purchase.order"
+				rml="customized_reports_01/report/purchase_order.rml"
+				auto="False"/>
+    </data>
+</openerp>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+	    <record id="group_hidden" model="res.groups">
+	        <field name="name">Hidden group</field>
+	    </record>
+    	
+    	<menuitem id="account.menu_action_account_invoice_report_all"
+              action="account.action_account_invoice_report_all"
+              parent="account.menu_finance_statistic_report_statement"
+        	  groups="group_hidden"
+              sequence="0"/>
+    </data>
+</openerp>

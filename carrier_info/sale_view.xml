@@ -1,0 +1,28 @@
+<openerp>
+    <data>
+		<record id="view_order_form_carrier_info" model="ir.ui.view">
+            <field name="name">sale.order.form.carrier.info</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>
+	                <xpath expr="/form/notebook/page[@string='Other Information']" position="after">
+				        <page string="Carrier">
+				            <field name="reception_in_report" colspan="4"/>
+				            <field name="carrier_in_report" colspan="4"/>
+				            <field name="carrier_id" 
+				            	   colspan="4" 
+				            	   domain="[('carrier', '=', True)]" 
+				            	   widget="selection" 
+				            	   on_change="onchange_carrier_id(carrier_id)"/>
+				            <field name="carrier_ref" colspan="4"/>
+				            <field name="carrier_vehicle" colspan="4"/>
+				            <field name="carrier_notes" colspan="4"/>
+				        </page>
+				    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,267 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* carrier_info
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-20 19:38+0000\n"
+"PO-Revision-Date: 2014-03-20 19:38+0000\n"
+"Last-Translator: Alejandro Santana <alejandrosantana@anubia.es>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: carrier_info
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique per Company!"
+msgstr ""
+
+#. module: carrier_info
+#: field:account.invoice,carrier_vehicle:0
+#: field:res.partner,carrier_vehicle:0
+#: field:sale.order,carrier_vehicle:0
+#: field:stock.picking,carrier_vehicle:0
+msgid "Vehicle data"
+msgstr "Datos del vehículo"
+
+#. module: carrier_info
+#: help:account.invoice,carrier_notes:0
+#: help:res.partner,carrier_notes:0
+#: help:sale.order,carrier_notes:0
+#: help:stock.picking,carrier_notes:0
+msgid "Any other data regarding the carrier."
+msgstr "Cualquier otro dato referente al transportista."
+
+#. module: carrier_info
+#: model:ir.model,name:carrier_info.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: carrier_info
+#: field:account.invoice,incoterm:0
+#: field:stock.picking,incoterm:0
+msgid "Incoterm"
+msgstr "Incoterm"
+
+#. module: carrier_info
+#: view:res.partner:0
+msgid "Carrier info"
+msgstr "Datos del transportista"
+
+#. module: carrier_info
+#: help:account.invoice,carrier_ref:0
+#: help:sale.order,carrier_ref:0
+msgid "Carrier reference for this order."
+msgstr "Referencia del transportista para este pedido."
+
+#. module: carrier_info
+#: help:stock.picking,carrier_ref:0
+msgid "Carrier reference for this picking list."
+msgstr "Referencia del transportista para este albarán."
+
+#. module: carrier_info
+#: help:res.partner,carrier:0
+msgid "Check if this partner is a carrier."
+msgstr "Seleccione esta opción si la empresa es transportista."
+
+#. module: carrier_info
+#: view:res.partner:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: carrier_info
+#: sql_constraint:account.invoice:0
+msgid "Invoice Number must be unique per Company!"
+msgstr ""
+
+#. module: carrier_info
+#: field:account.invoice,reception_in_report:0
+#: field:sale.order,reception_in_report:0
+#: field:stock.picking,reception_in_report:0
+msgid "Show reception fields in reports"
+msgstr "Mostrar campos de recepción en informes"
+
+#. module: carrier_info
+#: help:account.invoice,reception_in_report:0
+#: help:sale.order,reception_in_report:0
+#: help:stock.picking,reception_in_report:0
+msgid "Check if you want reception fields to be printed in reports."
+msgstr "Seleccionar esta opción si se quieren imprimir campos de recepción en los informes."
+
+#. module: carrier_info
+#: field:account.invoice,carrier_in_report:0
+#: field:sale.order,carrier_in_report:0
+#: field:stock.picking,carrier_in_report:0
+msgid "Show carrier in reports"
+msgstr "Mostrar transportista en informes"
+
+#. module: carrier_info
+#: view:account.invoice:0
+#: field:account.invoice,carrier_id:0
+#: view:res.partner:0
+#: field:res.partner,carrier:0
+#: view:sale.order:0
+#: view:stock.picking:0
+msgid "Carrier"
+msgstr "Transportista"
+
+#. module: carrier_info
+#: sql_constraint:stock.picking:0
+msgid "Reference must be unique per Company!"
+msgstr "¡La referencia debe ser única por compañía!"
+
+#. module: carrier_info
+#: help:account.invoice,carrier_in_report:0
+#: help:sale.order,carrier_in_report:0
+#: help:stock.picking,carrier_in_report:0
+msgid "Check if you want carrier info to be shown in reports."
+msgstr "Seleccione esta opción si desea que la información del transportista se muestre en los informes impresos."
+
+#. module: carrier_info
+#: help:account.invoice,incoterm:0
+#: help:stock.picking,incoterm:0
+msgid "Incoterm which stands for 'International Commercial terms' implies its a series of sales terms which are used in the commercial transaction."
+msgstr "Incoterm "
+
+#. module: carrier_info
+#: help:account.invoice,carrier_id:0
+msgid "Select here the carrier partner."
+msgstr "Seleccione aquí la empresa transportista."
+
+#. module: carrier_info
+#: field:account.invoice,carrier_ref:0
+#: field:sale.order,carrier_ref:0
+#: field:stock.picking,carrier_ref:0
+msgid "Carrier reference"
+msgstr "Referencia del transportista"
+
+#. module: carrier_info
+#: constraint:account.invoice:0
+msgid "Invoice date is previous to an existing invoice."
+msgstr "La fecha de la factura es anterior a otra factura existente."
+
+#. module: carrier_info
+#: help:account.invoice,carrier_vehicle:0
+#: help:res.partner,carrier_vehicle:0
+#: help:sale.order,carrier_vehicle:0
+#: help:stock.picking,carrier_vehicle:0
+msgid "Any data related to the vehicles, like plates, maximum weight, ship name, etc."
+msgstr "Cualquier dato relacionado con los vehículos, como matrícula, peso máximo, nombre del barco, etc."
+
+#. module: carrier_info
+#: model:ir.model,name:carrier_info.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: carrier_info
+#: model:ir.model,name:carrier_info.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: carrier_info
+#: model:ir.model,name:carrier_info.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: carrier_info
+#: field:account.invoice,carrier_notes:0
+#: field:res.partner,carrier_notes:0
+#: field:sale.order,carrier_notes:0
+#: field:stock.picking,carrier_notes:0
+msgid "Carrier notes"
+msgstr "Notas para el transportista"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "VAT :"
+msgstr "NIF :"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Your reference"
+msgstr "Su referencia"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Reception"
+msgstr "Recepción"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Comments:"
+msgstr "Comentarios:"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Signature"
+msgstr "Firma"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Received on:"
+msgstr "Recibido:"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier info"
+msgstr "Transportista"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Incoterm:"
+msgstr "Incoterm:"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier:"
+msgstr "Transportista:"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier ref:"
+msgstr "Referencia:"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier vehicle:"
+msgstr "Vehículo:"
+
+#. module: carrier_info
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier notes:"
+msgstr "Notas:"

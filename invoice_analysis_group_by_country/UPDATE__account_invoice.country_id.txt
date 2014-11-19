@@ -1,0 +1,11 @@
+# Force a value
+UPDATE account_invoice 
+SET country_id = 1;
+
+# Update with the value from invoice address
+UPDATE account_invoice 
+SET country_id = (
+    SELECT res_partner_address.country_id 
+    FROM res_partner_address
+    WHERE res_partner_address.id = account_invoice.address_invoice_id
+);
