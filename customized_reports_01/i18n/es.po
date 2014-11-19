@@ -1,0 +1,446 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* customized_reports_01
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-20 19:37+0000\n"
+"PO-Revision-Date: 2014-03-20 19:37+0000\n"
+"Last-Translator: Alejandro Santana <alejandrosantana@anubia.es>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: customized_reports_01
+#: sql_constraint:purchase.order:0
+msgid "Order Reference must be unique per Company!"
+msgstr "¡La referencia del pedido debe ser única por compañía!"
+
+#. module: customized_reports_01
+#: model:ir.model,name:customized_reports_01.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de pedido de compra"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Non Assigned Products:"
+msgstr "Productos no asignados:"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Incoterm:"
+msgstr "Incoterm:"
+
+#. module: customized_reports_01
+#: model:ir.actions.report.xml,name:customized_reports_01.report_purchase_quotation
+msgid "Request for Quotation"
+msgstr "Petición de presupuesto"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Tel. :"
+msgstr "Tel. :"
+
+#. module: customized_reports_01
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Shipping Address :"
+msgstr "Dirección de envío:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Date Req."
+msgstr "Fecha"
+
+#. module: customized_reports_01
+#: report:sale.order:0
+msgid "Quotation Date"
+msgstr "Fecha"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "VAT number:"
+msgstr "NIF:"
+
+#. module: customized_reports_01
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Shipping address:"
+msgstr "Dirección de envío:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Invoice address:"
+msgstr "Dirección de facturación:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+#: report:stock.picking.list:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Contact Address :"
+msgstr "Dirección de contacto:"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "."
+msgstr "."
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Total :"
+msgstr "Total:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Fax :"
+msgstr "Fax:"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Recipient"
+msgstr "Destinatario"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Our Order Reference"
+msgstr "Nuestra referencia"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Your Order Reference"
+msgstr "Su referencia"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Purchase Order Confirmation N°"
+msgstr "Confirmación de pedido de compra Nº"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+#: report:sale.order:0
+msgid "Order Date"
+msgstr "Fecha"
+
+#. module: customized_reports_01
+#: model:ir.actions.report.xml,name:customized_reports_01.report_picking_list
+msgid "Packing list"
+msgstr "Albarán"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Net Total:"
+msgstr "Base:"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "["
+msgstr "["
+
+#. module: customized_reports_01
+#: model:ir.actions.report.xml,name:customized_reports_01.report_purchase_order
+#: model:ir.model,name:customized_reports_01.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "]"
+msgstr "]"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Packing List:"
+msgstr "Albarán"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Taxes :"
+msgstr "Impuestos:"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Total"
+msgstr "Total"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Weight"
+msgstr "Peso"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "TVA :"
+msgstr "NIF: "
+
+#. module: customized_reports_01
+#: model:ir.model,name:customized_reports_01.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Línea de factura"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Qty"
+msgstr "Cantidad"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "______/______/______"
+msgstr "______/______/______"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Unit Price"
+msgstr "Precio unidad"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Request for Quotation N°"
+msgstr "Petición de presupuesto Nº"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+msgid "Order(Origin)"
+msgstr "Pedido (origen)"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Net Price"
+msgstr "Base"
+
+#. module: customized_reports_01
+#: model:ir.model,name:customized_reports_01.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de ventas"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Validated By"
+msgstr "Validado por"
+
+#. module: customized_reports_01
+#: report:stock.picking.list:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "VAT number:"
+msgstr "NIF :"
+
+#. module: customized_reports_01
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "VAT :"
+msgstr "NIF :"
+
+#. module: customized_reports_01
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "TVA :"
+msgstr "NIF :"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Payment Term"
+msgstr "Plazo de pago"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Payment Type"
+msgstr "Tipo de pago"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Quantity (1)"
+msgstr "Cantidad (1)"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Quantity (2)"
+msgstr "Cantidad (2)"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Unit Price (1)"
+msgstr "Precio ud. (1)"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Unit Price (2)"
+msgstr "Precio ud. (2)"
+
+#. module: customized_reports_01
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Price"
+msgstr "Importe"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Your reference"
+msgstr "Su referencia"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+#: report:purchase.order:0
+#: report:purchase.discount.order:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Reception"
+msgstr "Recepción"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Comments:"
+msgstr "Comentarios:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Signature"
+msgstr "Firma"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Received on:"
+msgstr "Recibido:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier info"
+msgstr "Transportista"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Incoterm:"
+msgstr "Incoterm:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier:"
+msgstr "Transportista:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier ref:"
+msgstr "Referencia:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier vehicle:"
+msgstr "Vehículo:"
+
+#. module: customized_reports_01
+#: report:purchase.order:0
+#: report:sale.order:0
+#: report:stock.picking.list:0
+#: report:account.invoice:0
+msgid "Carrier notes:"
+msgstr "Notas:"

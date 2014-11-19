@@ -1,0 +1,147 @@
+<openerp>
+    <data>
+
+        <record id="view_order_form_product_uos_extended" model="ir.ui.view">
+            <field name="name">sale.order.form.product.uos.extended</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <!-- Form called to edit sale_order_line -->
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page/group//field[@name='product_id']" position="replace">
+                        <field name="product_id"
+                               colspan="3"
+                               context="{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'force_product_uom': True}"
+                               on_change="product_id_change(parent.pricelist_id, product_id,
+                               								product_uom_qty,product_uom,price_unit,
+                               								product_uos_qty,product_uos,price_unit_uos,
+                               								name,parent.partner_id, False, True,
+                               								parent.date_order, product_packaging,
+                               								parent.fiscal_position, False, context)"/>
+                    </xpath>
+                    <!-- UoM -->
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page/group//field[@name='product_uom_qty']" position="replace">
+                        <field name="product_uom_qty"
+							   on_change="onchange_product_uom_qty(parent.pricelist_id, product_id,
+											    				   product_uom_qty, product_uom, price_unit,
+																   product_uos_qty, product_uos, price_unit_uos,
+																   product_has_uos,
+																   cancel_uom, cancel_uom_qty, cancel_uom_price,
+																   cancel_uos, cancel_uos_qty, cancel_uos_price,
+																   parent.partner_id,
+							   									   False, False, parent.date_order,
+							   									   product_packaging, parent.fiscal_position,
+							   									   True, context)" />
+                    </xpath>
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page/group//field[@name='product_uom']" position="replace">
+                        <field name="product_uom" nolabel="1" 
+                        	   on_change="onchange_product_uom(product_id,
+                        	   								   product_uom_qty, product_uom, price_unit,
+                        	   								   product_uos_qty, product_uos, price_unit_uos,
+                        	   								   product_has_uos,
+                        	   								   cancel_uom, cancel_uom_qty, cancel_uom_price,
+                        	   								   cancel_uos, cancel_uos_qty, cancel_uos_price,
+                        	   								   context)"/>
+                    </xpath>
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page/group//field[@name='price_unit']" position="replace">
+                        <field name="price_unit"
+                        	   on_change="onchange_price_unit_uom(product_id,
+                        	   									  product_uom_qty, product_uom, price_unit,
+                        	   									  product_uos_qty, product_uos, price_unit_uos,
+                        	   									  product_has_uos,
+                        	   									  cancel_uom, cancel_uom_qty, cancel_uom_price,
+                        	   									  cancel_uos, cancel_uos_qty, cancel_uos_price,
+                        	   									  context)"
+                               help="This is the price per unit of measure (or main unit of measure, or logistic unit of measure)" />
+                    </xpath>
+                    
+                    <!-- UoS -->
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page/group//field[@name='product_uos_qty']" position="replace">
+                        <field name="product_uos_qty" 
+                               groups="product.group_uos" 
+                               attrs="{'invisible':[('product_has_uos','=',False)]}" 
+                               on_change="onchange_product_uos_qty(product_id,product_uom_qty,product_uom,price_unit,product_uos_qty,product_uos,price_unit_uos,product_has_uos, cancel_uom, cancel_uom_qty, cancel_uom_price, cancel_uos, cancel_uos_qty, cancel_uos_price, context)" />
+                    </xpath>
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page[@string='Order Line']/group//field[@name='product_uos']" position="replace">
+                        <field name="product_uos" 
+                               groups="product.group_uos" 
+                               nolabel="1" 
+                               attrs="{'invisible':[('product_has_uos','=',False)]}" 
+                               on_change="onchange_product_uos(product_id,product_uom_qty,product_uom,price_unit,product_uos_qty,product_uos,price_unit_uos,product_has_uos, cancel_uom, cancel_uom_qty, cancel_uom_price, cancel_uos, cancel_uos_qty, cancel_uos_price, context)" />
+                        <field name="price_unit_uos" 
+                               groups="product.group_uos" 
+                               attrs="{'invisible':[('product_has_uos','=',False)]}" 
+                               on_change="onchange_price_unit_uos(product_id,product_uom_qty,product_uom,price_unit,product_uos_qty,product_uos,price_unit_uos,product_has_uos, cancel_uom, cancel_uom_qty, cancel_uom_price, cancel_uos, cancel_uos_qty, cancel_uos_price, context)" 
+                               help="This is the price per unit of sale (or secondary unit of measure)" />
+                    </xpath>
+                    <xpath expr="//form/notebook/page//field[@name='order_line']//form/notebook/page[@string='Order Line']/group//field[@name='product_packaging']" position="before">
+                    	<newline/>
+                        <field name="product_uos_qty_dummy" 
+                               groups="product.group_uos" 
+                               attrs="{'readonly':True, 'invisible':[('product_has_uos','=',True)]}" />
+                    	<field name="product_uos_dummy" 
+                               groups="product.group_uos" 
+                               nolabel="1" 
+                               attrs="{'readonly':True, 'invisible':[('product_has_uos','=',True)]}" />
+                        <field name="price_unit_uos_dummy" 
+                               groups="product.group_uos" 
+                               attrs="{'readonly':True, 'invisible':[('product_has_uos','=',True)]}" 
+                               help="This is the price per unit of sale (or secondary unit of measure)" />
+                        <newline/>
+                        <field name="product_has_uos" 
+                               groups="product.group_uos" 
+                               attrs="{'invisible': True}" />
+                        <newline/>
+                        <field name="cancel_uom" attrs="{'invisible': True}"/>
+                    	<newline/>
+                        <field name="cancel_uom_qty" attrs="{'invisible': True}"/>
+                    	<newline/>
+                        <field name="cancel_uom_price" attrs="{'invisible': True}"/>
+                    	<newline/>
+                        <field name="cancel_uos" attrs="{'invisible': True}"/>
+                    	<newline/>
+                        <field name="cancel_uos_qty" attrs="{'invisible': True}"/>
+                    	<newline/>
+                        <field name="cancel_uos_price" attrs="{'invisible': True}"/>
+                    	<newline/>
+                        <field name="cancel_uos_price" attrs="{'invisible': True}"/>
+                    	<newline/>
+                    </xpath>
+                    
+                    <!-- sale_order_line tree view within sale_order form -->
+                    <xpath expr="//form/notebook/page//field[@name='order_line']/tree//field[@name='price_unit']" position="replace">
+                        <!-- Just to remove the second price_unit column -->
+                    </xpath>
+                    <xpath expr="//form/notebook/page//field[@name='order_line']/tree//field[@name='product_uom']" position="after">
+                        <field name="price_unit" />
+                    </xpath>
+                    <xpath expr="//form/notebook/page//field[@name='order_line']/tree//field[@name='product_uos']" position="after">
+                        <field name="price_unit_uos" groups="product.group_uos" string="Price(UoS)"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+                
+        <record id="view_order_line_form2_product_uos_extended" model="ir.ui.view">
+            <field name="name">sale.order.line.form2.product.uos.extended</field>
+            <field name="model">sale.order.line</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_line_form2"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//form//field[@name='product_uom']" position="after">
+                        <field name="product_uos_qty" groups="product.group_uos" string="Quantity(UoS)"/>
+                    </xpath>
+                    <xpath expr="//form//field[@name='product_uom']" position="after">
+                        <field name="product_uos" groups="product.group_uos"  string="(UoS)"/>
+                    </xpath>
+                    <xpath expr="//form//field[@name='price_unit']" position="after">
+                        <field name="price_unit_uos" groups="product.group_uos"  string="Price(UoS)"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

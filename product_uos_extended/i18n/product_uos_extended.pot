@@ -1,0 +1,218 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_uos_extended
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-27 06:46+0000\n"
+"PO-Revision-Date: 2014-04-27 06:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_uos_extended
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique per Company!"
+msgstr ""
+
+#. module: product_uos_extended
+#: model:ir.model,name:product_uos_extended.model_product_uom
+msgid "Product Unit of Measure"
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/account_invoice.py:395
+#, python-format
+msgid "Unit of sale not set"
+msgstr ""
+
+#. module: product_uos_extended
+#: field:account.invoice.line,price_unit_dummy:0
+#: field:account.invoice.line,quantity_dummy:0
+#: field:sale.order.line,price_unit_uos_dummy:0
+msgid "Unit Price (UoS)"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:sale.order.line:0
+msgid "(UoS)"
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/sale.py:222
+#, python-format
+msgid "There is no income category account defined in default Properties for Product Category or Fiscal Position is not defined !"
+msgstr ""
+
+#. module: product_uos_extended
+#: model:ir.model,name:product_uos_extended.model_product_product
+msgid "Product"
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/sale.py:198
+#: code:addons/product_uos_extended/sale.py:221
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: product_uos_extended
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr ""
+
+#. module: product_uos_extended
+#: constraint:stock.move:0
+msgid "You can not move products from or to a location of the type view."
+msgstr ""
+
+#. module: product_uos_extended
+#: view:sale.order:0
+msgid "This is the price per unit of measure (or main unit of measure, or logistic unit of measure)"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:sale.order.line:0
+msgid "Quantity(UoS)"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+msgid "(UoM)"
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/account_invoice.py:396
+#, python-format
+msgid "Unit of sale (UoS) must be set.\n"
+"Calculations based on it were skipped."
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/account_invoice.py:405
+#, python-format
+msgid "Unit of measure (UoM) must be set.\n"
+"Calculations based on it were skipped."
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/account_invoice.py:404
+#, python-format
+msgid "Unit of measure not set"
+msgstr ""
+
+#. module: product_uos_extended
+#: sql_constraint:product.uom:0
+msgid "The conversion ratio for a unit of measure cannot be 0!"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+msgid "Quantity(UoM) :"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+msgid "Price(UoM)"
+msgstr ""
+
+#. module: product_uos_extended
+#: field:sale.order.line,product_uos_dummy:0
+msgid "Product UoS"
+msgstr ""
+
+#. module: product_uos_extended
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:sale.order:0
+#: view:sale.order.line:0
+msgid "Price(UoS)"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:product.product:0
+msgid "Products"
+msgstr ""
+
+#. module: product_uos_extended
+#: field:account.invoice.line,product_has_uos:0
+#: field:sale.order.line,product_has_uos:0
+msgid "Product has UoS defined"
+msgstr ""
+
+#. module: product_uos_extended
+#: code:addons/product_uos_extended/sale.py:199
+#, python-format
+msgid "There is no income account defined for this product: \"%s\" (id:%d)"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+msgid "Quantity :"
+msgstr ""
+
+#. module: product_uos_extended
+#: field:account.invoice.line,uos_id_dummy:0
+msgid "Unit of Sale"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+#: view:sale.order:0
+msgid "This is the price per unit of sale (or secondary unit of measure)"
+msgstr ""
+
+#. module: product_uos_extended
+#: model:ir.model,name:product_uos_extended.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: product_uos_extended
+#: model:ir.model,name:product_uos_extended.model_account_invoice_line
+msgid "Invoice Line"
+msgstr ""
+
+#. module: product_uos_extended
+#: field:sale.order.line,product_uos_qty_dummy:0
+msgid "Quantity (UoS)"
+msgstr ""
+
+#. module: product_uos_extended
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+msgid "Quantity(UoM)"
+msgstr ""
+
+#. module: product_uos_extended
+#: view:account.invoice.line:0
+msgid "This is the price per unit of measure (or warehouse/logistic unit of measure)"
+msgstr ""
+
+#. module: product_uos_extended
+#: model:ir.model,name:product_uos_extended.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: product_uos_extended
+#: help:account.invoice.line,product_has_uos:0
+#: help:sale.order.line,product_has_uos:0
+msgid "Checked if selected product has a defined UoS (Unit of Sale)."
+msgstr ""
+
+#. module: product_uos_extended
+#: model:ir.model,name:product_uos_extended.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+

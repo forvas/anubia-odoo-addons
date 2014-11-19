@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_partner_form_carrier_info" model="ir.ui.view">
+            <field name="name">res.partner.form.carrier.info</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+            	<data>
+	                <page string="Notes" position="before">
+		                <page string="Carrier">
+		                    <group colspan="2" col="2">
+		                        <separator string="Carrier info" colspan="4"/>
+		                        <field name="carrier"/>
+		                        <field name="carrier_vehicle"/>
+		                        <field name="carrier_notes"/>
+		                    </group>
+		                </page>
+	                </page>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

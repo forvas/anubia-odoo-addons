@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        #
+        # Sending Products
+        #
+        -->
+        <record id="view_picking_out_form_carrier_info" model="ir.ui.view">
+            <field name="name">stock.picking.out.form.carrier.info</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="stock.view_picking_out_form"/>
+            <field name="arch" type="xml">
+                <data>
+	                <xpath expr="/form/notebook/page[@string='Notes']" position="before">
+				        <page string="Carrier">
+				            <field name="reception_in_report" colspan="4"/>
+				            <field name="carrier_in_report" colspan="4"/>
+				            <field name="carrier_id" 
+				            	   colspan="4"
+				            	   domain="[('carrier', '=', True)]"
+				            	   widget="selection"
+				            	   on_change="onchange_carrier_id(carrier_id)"/>
+				            <field name="carrier_ref" colspan="4"/>
+				            <field name="carrier_vehicle" colspan="4"/>
+				            <field name="carrier_notes" colspan="4"/>
+				        </page>
+				    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</openerp>

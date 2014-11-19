@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- Adding the fields from product.product to the screen -->
+		<record id="product_product_tree_view_product_uos_extended" model="ir.ui.view">
+            <field name="name">product.product.tree.product.uos.extended</field>
+            <field name="model">product.product</field>
+            <field name="type">tree</field>
+			<field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field eval="7" name="priority"/>
+            <field name="arch" type="xml">
+                <tree colors="red:virtual_available&lt;0;blue:virtual_available&gt;=0 and state in ('draft', 'end', 'obsolete');black:virtual_available&gt;=0 and state not in ('draft', 'end', 'obsolete')" string="Products">
+                    <field name="lst_price" position="after">
+	                    <field name="list_price_uos" groups="product.group_uos" invisible="not uos_id"/>      
+              		</field>        
+                </tree>
+            </field>
+        </record>
+		
+		<!-- Product Form View  -->
+		<record id="product_normal_form_view_product_uos_extended" model="ir.ui.view">
+            <field name="name">product.normal.form.product.uos.extended</field>
+            <field name="model">product.product</field>
+            <field name="type">form</field>
+			<field name="inherit_id" ref="product.product_normal_form_view"/>
+			<field name="arch" type="xml">
+				<data>
+					<xpath expr="//form/notebook/page//field[@name='uos_id']" position="replace">
+	           			<field name="uos_id" 
+	           				   groups="product.group_uos" 
+	           				   on_change="onchange_uos(uom_id,uos_id,uos_coeff,list_price,list_price_uos,context)" />
+	              	</xpath>
+	            	<xpath expr="//form/notebook/page//field[@name='uos_coeff']" position="replace">
+	           			<field name="uos_coeff" 
+	           				   groups="product.group_uos" 
+	           				   on_change="onchange_uos_coeff(uom_id,uos_id,uos_coeff,list_price,list_price_uos,cancel_uos_coeff,cancel_list_price_uom,cancel_list_price_uos,context)" 
+	           				   attrs="{'readonly':[('uos_id','=',False)]}" />
+	              	</xpath>
+	            	<xpath expr="//form/notebook/page//field[@name='list_price']" position="replace">
+	           			<field name="list_price" 
+	           				   on_change="onchange_list_price(uom_id,uos_id,uos_coeff,list_price,list_price_uos,cancel_uos_coeff,cancel_list_price_uom,cancel_list_price_uos,context)" />
+	              	</xpath>
+	            	<xpath expr="//form/notebook/page//field[@name='list_price']" position="after">
+	           			<field name="list_price_uos" 
+	           				   groups="product.group_uos" 
+	           				   on_change="onchange_list_price_uos(uom_id,uos_id,uos_coeff,list_price,list_price_uos,cancel_uos_coeff,cancel_list_price_uom,cancel_list_price_uos,context)" 
+	           				   attrs="{'invisible':[('uos_id','=',False)]}" />
+        				<field name="list_price_uos_dummy" 
+	           				   attrs="{'invisible':[('uos_id','!=',False)]}"/>
+       				    <newline/>
+	           			<field name="cancel_uos_coeff" attrs="{'invisible':True}" />
+       				    <newline/>
+	           			<field name="cancel_list_price_uom" attrs="{'invisible':True}" />
+       				    <newline/>
+	           			<field name="cancel_list_price_uos" attrs="{'invisible':True}" />
+	              	</xpath>
+            	</data>
+          	</field>
+   		</record>
+        
+	</data>
+</openerp>

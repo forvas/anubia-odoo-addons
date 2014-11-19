@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_order_form_add_early_payment_disc_total_uos" model="ir.ui.view">
+            <field name="name">sale.order.form.add_early_payment_disc_total</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale_early_payment_discount.view_order_form_add_early_payment_disc_total"/> <!--product_list_price_uos_mod.view_order_form_inherit_price_uos"/>-->
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="amount_total" position="after">
+                    <newline/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
