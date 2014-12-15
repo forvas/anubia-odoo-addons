@@ -1,0 +1,19 @@
+<openerp>
+    <data>
+    	
+		<!-- Modified invoice form view to allow print VAT details in invoice reports  -->
+        <record id="invoice_form_print_no_vat" model="ir.ui.view">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                    <field name="fiscal_position" position="after">
+	                    <newline/>
+                    	<field name="print_taxes"/>
+            		</field>
+            </field>
+        </record>
+        
+    </data>
+</openerp>
+        
