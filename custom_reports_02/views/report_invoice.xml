@@ -54,7 +54,7 @@
 	                        <th class="text-right">Unit Price</th>
 	                        <th class="text-right" groups="sale.group_discount_per_so_line">Discount (%)</th>
 	                        <!--  Removed tax column -->
-	<!--                         <th class="text-right">Taxes</th> -->
+	                        <th class="text-right" t-if="o.print_taxes">Taxes</th>
 	                        <th class="text-right">Amount</th>
 	                    </tr>
 	                </thead>
@@ -69,10 +69,10 @@
 	                            <span t-field="l.price_unit" t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}' />
 	                        </td>
 	                        <td groups="sale.group_discount_per_so_line"><span t-field="l.discount"/></td>
-	                        <!--  Removed tax column -->
-	<!--                         <td class="text-right"> -->
-	<!--                             <span t-esc="', '.join(map(lambda x: x.name, l.invoice_line_tax_id))"/> -->
-	<!--                         </td> -->
+	                        <!--  Optional tax column -->
+		                        <td class="text-right" t-if="o.print_taxes">
+		                            <span t-esc="', '.join(map(lambda x: x.name, l.invoice_line_tax_id))"/>
+		                        </td>
 	                        <td class="text-right">
 	                            <span t-field="l.price_subtotal" 
 	                                t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
@@ -84,15 +84,15 @@
 	            <div class="row">
 	                <div class="col-xs-4 pull-right">
 	                    <table class="table table-condensed invoice_totals">
-	                    	<!-- Only show row with 'Total Without Taxes' for purchase invoices -->
-	                        <tr class="border-black" t-if="o.type in ['in_invoice', 'in_refund']">
+	                    	<!-- Optional row with 'Total Without Taxes' -->
+	                        <tr class="border-black" t-if="o.print_taxes">
 	                            <td><strong>Total Without Taxes</strong></td>
 	                            <td class="text-right">
 	                                <span t-field="o.amount_untaxed" t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
 	                            </td>
 	                        </tr>
-	                    	<!-- Only show row with 'Taxes' for purchase invoices -->
-	                        <tr t-if="o.type in ['in_invoice', 'in_refund']">
+	                    	<!-- Optional row with 'Taxes' -->
+	                        <tr t-if="o.print_taxes">
 	                            <td>Taxes</td>
 	                            <td class="text-right">
 	                                <span t-field="o.amount_tax" t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
@@ -108,8 +108,36 @@
 	                </div>
 	            </div>
 	
-				<!-- Removed the tax table -->
-	
+				<!-- Optional tax table -->
+				<div t-if="o.print_taxes">
+	            <div class="row" t-if="o.tax_line">
+	                <div class="col-xs-6">
+	                    <table class="table table-condensed">
+	                        <thead>
+	                            <tr>
+	                                <th>Tax</th>
+	                                <th class="text-right">Base</th>
+	                                <th class="text-right">Amount</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr t-foreach="o.tax_line" t-as="t">
+	                                <td><span t-field="t.name"/></td>
+	                                <td class="text-right">
+	                                    <span t-field="t.base"
+	                                        t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
+	                                </td>
+	                                <td class="text-right">
+	                                    <span t-field="t.amount"
+	                                        t-field-options='{"widget": "monetary", "display_currency": "o.currency_id"}'/>
+	                                </td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	            </div>
+
 	            <p t-if="o.comment">
 	                <strong>Comment:</strong><br/>
 	                <span t-field="o.comment"/>

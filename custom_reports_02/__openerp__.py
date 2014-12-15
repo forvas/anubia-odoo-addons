@@ -27,18 +27,17 @@
     'version': '0.1',
     'category': 'Customization',
     'description': '''
-This module customizes invoice report for an specific customer
-==============================================================
-
-    - Invoice report: removes tax details in customer invoices, by specific customer request. 
-
-
-DISCLAIMER:
------------
-This module might result in illegal document for many cases, by hiding tax details.
-This is done as a request by an specific customer under their sole responsability.
-Therefore, use this module wisely and under your responsability. 
-''',
+        This module customizes invoice report for an specific customer
+        ==============================================================
+        
+            - Invoice report: allows to remove tax details in customer invoices (by specific customer request).
+        
+        **DISCLAIMER:**
+        
+        This module might result in illegal document in many cases, by hiding tax details.
+        This is done as a request for a specific customer with unique legal circumstances and under their sole responsability.
+        Therefore, use this module wisely and under your responsability. 
+        ''',
     # 'complexity': 'normal',
     'license': 'AGPL-3',
     'author': 'Alejandro Santana <alejandrosantana@anubia.es>',
@@ -58,6 +57,7 @@ Therefore, use this module wisely and under your responsability.
     'data': [
         'account_report.xml',
         'views/report_invoice.xml',
+        'views/account_invoice_view.xml',
      ],
     'demo': [],
     'test': [],
