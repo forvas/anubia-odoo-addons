@@ -3,7 +3,7 @@
     <data>
         <report id="report_picking_list" 
         		model="stock.picking" 
-        		name="stock.picking.list" 
+        		name="stock.picking.list.custom"
         		string="Packing list" 
         		rml="customized_reports_01/report/picking.rml"/>
     </data>

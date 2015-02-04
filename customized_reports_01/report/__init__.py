@@ -5,3 +5,4 @@
 ################################################################
 
 from . import account_invoice_report_country
+from . import picking
