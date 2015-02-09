@@ -245,8 +245,8 @@
                 </tr>
             </blockTable>
             <section>
-                <para style="terp_default_2">[[ repeatIn([line for line in picking.move_lines if ((line.state == 'confirmed' or line.state=='done' or line.state=='assigned') and not line.scrapped)],'move_lines') ]]</para>
-                <para style="terp_default_2">[[ (picking.move_lines!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
+                <para style="terp_default_2">[[ repeatIn([line for line in stock_moves_grouped_by_name() if ((line.state == 'confirmed' or line.state=='done' or line.state=='assigned') and not line.scrapped)],'move_lines') ]]</para>
+                <para style="terp_default_2">[[ (stock_moves_grouped_by_name()!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
                 <blockTable colWidths="400.0,120.0" style="Move_Line_Contect_Assign_State">
                     <tr>
                         <td>
@@ -261,11 +261,11 @@
                     </tr>
                 </blockTable>
             </section>
-            <para style="terp_default_Bold_9">Non Assigned Products:[[ ([line for line in picking.move_lines if (line.state == 'draft' or line.state=='waiting' )]) and ' ' or removeParentNode('para') ]]</para>
+            <para style="terp_default_Bold_9">Non Assigned Products:[[ ([line for line in stock_moves_grouped_by_name() if (line.state == 'draft' or line.state=='waiting' )]) and ' ' or removeParentNode('para') ]]</para>
             <para style="terp_default_2"/>
             <section>
-                <para style="terp_default_2">[[ repeatIn([line for line in picking.move_lines if (line.state == 'draft' or line.state=='waiting')],'move_lines') ]]</para>
-                <para style="terp_default_2">[[ (picking.move_lines!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
+                <para style="terp_default_2">[[ repeatIn([line for line in stock_moves_grouped_by_name() if (line.state == 'draft' or line.state=='waiting')],'move_lines') ]]</para>
+                <para style="terp_default_2">[[ (stock_moves_grouped_by_name()!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
                 <blockTable colWidths="400.0,120.0" style="Table1">
                     <tr>
                         <td>

@@ -26,12 +26,12 @@ msgid "Purchase Order Line"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Non Assigned Products:"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Incoterm:"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 
 #. module: customized_reports_01
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
@@ -69,14 +69,14 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "VAT number:"
 msgstr ""
 
 #. module: customized_reports_01
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
@@ -92,19 +92,19 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Description"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
 msgid "Contact Address :"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "."
 msgstr ""
 
@@ -127,7 +127,7 @@ msgid "Fax :"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Recipient"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgid "Net Total:"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "["
 msgstr ""
 
@@ -179,17 +179,17 @@ msgid "Purchase Order"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "]"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Packing List:"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Quantity"
 msgstr ""
 
@@ -200,12 +200,12 @@ msgid "Taxes :"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Total"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Weight"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgid "Qty"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "______/______/______"
 msgstr ""
 
@@ -244,7 +244,7 @@ msgid "Request for Quotation N°"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 msgid "Order(Origin)"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgid "Validated By"
 msgstr ""
 
 #. module: customized_reports_01
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
 msgid "VAT number:"
@@ -274,7 +274,7 @@ msgstr ""
 
 #. module: customized_reports_01
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
@@ -283,7 +283,7 @@ msgstr ""
 
 #. module: customized_reports_01
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
@@ -293,7 +293,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Payment Term"
 msgstr ""
@@ -301,7 +301,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Payment Type"
 msgstr ""
@@ -309,7 +309,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Quantity (1)"
 msgstr ""
@@ -317,7 +317,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Quantity (2)"
 msgstr ""
@@ -325,7 +325,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Unit Price (1)"
 msgstr ""
@@ -333,14 +333,14 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Unit Price (2)"
 msgstr ""
 
 #. module: customized_reports_01
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
@@ -350,7 +350,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Your reference"
 msgstr ""
@@ -358,7 +358,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 #: report:purchase.order:0
 #: report:purchase.discount.order:0
@@ -368,7 +368,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Reception"
 msgstr ""
@@ -376,7 +376,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Comments:"
 msgstr ""
@@ -384,7 +384,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Signature"
 msgstr ""
@@ -392,7 +392,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Received on:"
 msgstr ""
@@ -400,7 +400,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Carrier info"
 msgstr ""
@@ -409,7 +409,7 @@ msgstr ""
 #: report:purchase.order:0
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Incoterm:"
 msgstr ""
@@ -417,7 +417,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Carrier:"
 msgstr ""
@@ -425,7 +425,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Carrier ref:"
 msgstr ""
@@ -433,7 +433,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Carrier vehicle:"
 msgstr ""
@@ -441,7 +441,7 @@ msgstr ""
 #. module: customized_reports_01
 #: report:purchase.order:0
 #: report:sale.order:0
-#: report:stock.picking.list:0
+#: report:stock.picking.list.custom:0
 #: report:account.invoice:0
 msgid "Carrier notes:"
 msgstr ""
