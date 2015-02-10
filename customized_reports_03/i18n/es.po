@@ -1,0 +1,156 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 08:32+0000\n"
+"PO-Revision-Date: 2015-02-03 10:15+0100\n"
+"Last-Translator: Juan Formoso <jfv@anubia.es>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "INVOICE"
+msgstr "FACTURA"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "PRO-FORMA"
+msgstr "PRO-FORMA"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "DRAFT INVOICE"
+msgstr "FACTURA BORRADOR"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "CANCELLED INVOICE"
+msgstr "FACTURA CANCELADA"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "REFUND"
+msgstr "DEVOLUCIÓN"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "SUPPLIER REFUND"
+msgstr "FACTURA RECTIFICATIVA DE PROVEEDOR"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "SUPPLIER INVOICE"
+msgstr "FACTURA DE PROVEEDOR"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "INVOICE DATE"
+msgstr "FECHA"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "INVOICE NUMBER"
+msgstr "Nº FACTURA"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "SOURCE"
+msgstr "ORIGEN"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "CUSTOMER TIN"
+msgstr "CIF CLIENTE"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "PAYMENT MODE"
+msgstr "FORMA DE PAGO"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "TRANSFER:"
+msgstr "TRANSFERENCIA:"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "BIC/SWIFT:"
+msgstr "BIC/SWIFT:"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "INTERNAL REFERENCE"
+msgstr "CÓD. ARTÍCULO"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "DESCRIPTION"
+msgstr "DESCRIPCIÓN"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "TAXES"
+msgstr "IMPUESTOS"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "QUANTITY"
+msgstr "CANTIDAD"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "UNIT PRICE"
+msgstr "PRECIO U."
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "PRICE"
+msgstr "PRECIO"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "NET TOTAL:"
+msgstr "BASE:"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "TAXES:"
+msgstr "IMPUESTOS:"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "TOTAL:"
+msgstr "TOTAL:"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "TAX"
+msgstr "IMPUESTO"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "BASE"
+msgstr "BASE"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "AMOUNT"
+msgstr "IMPORTE"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "COMMENT"
+msgstr "COMENTARIOS/OBSERVACIONES"
+
+#. module: customized_reports_03
+#: report:account.invoice.custom:0
+msgid "Please, indicate the invoice number on the concept of income"
+msgstr "Por favor, indique el número de factura en el concepto del ingreso"
