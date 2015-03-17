@@ -220,7 +220,7 @@
     <spacer length="1.0cm"/>
 
     <pto>
-    <blockTable colWidths="2.9cm,4.9cm,2.4cm,2.4cm,2.8cm,2.6cm" style="Table7">
+    <blockTable colWidths="3.1cm,4.7cm,2.4cm,2.4cm,2.8cm,2.6cm" style="Table7">
       <tr>
         <td>
           <para style="terp_tblheader_General"><b>INTERNAL REFERENCE</b></para>
@@ -244,7 +244,7 @@
     </blockTable>
     <section>
       <para style="terp_default_bucle">[[ repeatIn(o.invoice_line,'l') ]]</para>
-      <blockTable colWidths="2.9cm,4.9cm,2.4cm,2.4cm,2.8cm,2.6cm" style="Table8">
+      <blockTable colWidths="3.1cm,4.7cm,2.4cm,2.4cm,2.8cm,2.6cm" style="Table8">
         <tr>
 	  <td>
             <para style="terp_default_8">[[ l.product_id.name ]]</para>
