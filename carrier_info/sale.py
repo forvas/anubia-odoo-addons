@@ -82,7 +82,6 @@ class sale_order(osv.osv):
     def _prepare_order_picking(self, cr, uid, order, context=None):
         pick_dict = super(sale_order,
                           self)._prepare_order_picking(cr, uid, order, context)
-        self.pool.get('ir.sequence').get(cr, uid, 'stock.picking.out')
         pick_dict.update({
             'incoterm': order.incoterm.id or None,
             'carrier_id': order.carrier_id.id or None,
